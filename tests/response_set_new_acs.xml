@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <cwmp:ID soapenv:mustUnderstand="1">122893493860</cwmp:ID>
+    </soapenv:Header>
+    <soapenv:Body>
+        <cwmp:SetParameterValues>
+            <ParameterList soap:arrayType="cwmp:ParameterValueStruct[5]">
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.URL</Name>
+                    <Value xsi:type="xsd:string">http://192.168.0.10:8083/abc/</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.Username</Name>
+                    <Value xsi:type="xsd:string">0000000000000000000000</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.Password</Name>
+                    <Value xsi:type="xsd:string">00000000000000</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.ConnectionRequestUsername</Name>
+                    <Value xsi:type="xsd:string">0000000000000000-FG824CD-000000</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.ConnectionRequestPassword</Name>
+                    <Value xsi:type="xsd:string">00000000000000000000000000000000</Value>
+                </ParameterValueStruct>
+            </ParameterList>
+            <ParameterKey>12289349386</ParameterKey>
+        </cwmp:SetParameterValues>
+    </soapenv:Body>
+</soapenv:Envelope>

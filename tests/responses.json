@@ -1,0 +1,22 @@
+{
+    "empty": {
+        "status_code": 204
+    },
+    "set_new_acs": {
+        "status_code": 200,
+        "content": "response_set_new_acs.xml",
+        "content_type": "text/xml"
+    },
+    "parameters": {
+        "status_code": 200,
+        "content": "response_parameters.xml",
+        "content_type": "text/xml"
+    },
+    "sample": {
+        "status_code": 204,
+        "headers": {
+            "X-Custom-Header-1": "Value1",
+            "X-Custom-Header-2": "Value2"
+        }
+    }
+}

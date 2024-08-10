@@ -1,0 +1,24 @@
+{
+  "acs":{
+    "InternetGatewayDevice.X_Management.Server.SSHServer.Enable": {
+      "value": "1",
+      "type": "boolean",
+      "add": true
+    },
+    "InternetGatewayDevice.X_Management.ShellEnable": {
+      "value": "1",
+      "type": "boolean",
+      "add": true
+    }
+  },
+  "client": {
+    "InternetGatewayDevice.X_Management.Server.SSHServer.Enable": {
+      "value": "0",
+      "type": "boolean"
+    },
+    "InternetGatewayDevice.X_Management.ShellEnable": {
+      "value": "0",
+      "type": "boolean"
+    }
+  }
+}

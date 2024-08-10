@@ -1,0 +1,152 @@
+<soapenv:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:cwmp="urn:dslforum-org:cwmp-1-0" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <cwmp:ID soapenv:mustUnderstand="1">122893777650</cwmp:ID>
+    </soapenv:Header>
+    <soapenv:Body>
+        <cwmp:SetParameterValues>
+            <ParameterList soap:arrayType="cwmp:ParameterValueStruct[35]">
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.X_Management.TelnetPrompt</Name>
+                    <Value xsi:type="xsd:string">ONH0000000000</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.X_Management.LoginAccount.1.Password</Name>
+                    <Value xsi:type="xsd:string">PASSWORD_VALUE</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.X_Management.LoginAccount.2.Password</Name>
+                    <Value xsi:type="xsd:string">PASSWORD_VALUE</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.X_Management.Server.SSHServer.Enable</Name>
+                    <Value xsi:type="xsd:boolean">-1</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.QueueManagement.X_DsQosMode</Name>
+                    <Value xsi:type="xsd:unsignedInt">2</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.LANDevice.1.WLANConfiguration.5.X_AutoChannelReselectionTimeout</Name>
+                    <Value xsi:type="xsd:unsignedInt">1</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_WpaGTKRekey</Name>
+                    <Value xsi:type="xsd:unsignedInt">86400</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_AutoChannelInterference.Enable</Name>
+                    <Value xsi:type="xsd:boolean">0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.LANDevice.1.WLANConfiguration.1.X_ChannelList</Name>
+                    <Value xsi:type="xsd:string">1,2,3,4,5,6,7,8,9,10,11,12,13</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.PeriodicInformTime</Name>
+                    <Value xsi:type="xsd:dateTime">0002-11-30T00:00:00</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.X_EDNS0</Name>
+                    <Value xsi:type="xsd:boolean">0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.WiFi.X_BandSteer.Enable</Name>
+                    <Value xsi:type="xsd:boolean">1</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.2.Enable</Name>
+                    <Value xsi:type="xsd:boolean">0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.3.Enable</Name>
+                    <Value xsi:type="xsd:boolean">0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANIPConnection.1.Enable</Name>
+                    <Value xsi:type="xsd:boolean">0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.QueueManagement.Queue.10.ShapingRate</Name>
+                    <Value xsi:type="xsd:int">-1</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Username</Name>
+                    <Value xsi:type="xsd:string">ONH0000000000@vodafone</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.1.Password</Name>
+                    <Value xsi:type="xsd:string">PASSWORD_VALUE</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.SIP.ProxyServer</Name>
+                    <Value xsi:type="xsd:string">ims.server.domain</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.SIP.ProxyServerPort</Name>
+                    <Value xsi:type="xsd:string">5095</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.2.SIP.ProxyServer</Name>
+                    <Value xsi:type="xsd:string">ims.server.domain</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.2.SIP.ProxyServerPort</Name>
+                    <Value xsi:type="xsd:string">5095</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.SIP.OutboundProxy</Name>
+                    <Value xsi:type="xsd:string">192.168.0.200</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.SIP.OutboundProxyPort</Name>
+                    <Value xsi:type="xsd:string">5095</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.2.SIP.OutboundProxy</Name>
+                    <Value xsi:type="xsd:string">192.168.0.250</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.2.SIP.OutboundProxyPort</Name>
+                    <Value xsi:type="xsd:string">5095</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.SIP.UserAgentDomain</Name>
+                    <Value xsi:type="xsd:string">ims.server.domain</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.2.SIP.UserAgentDomain</Name>
+                    <Value xsi:type="xsd:string">ims.server.domain</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.Line.1.DirectoryNumber</Name>
+                    <Value xsi:type="xsd:string">+34000000000</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.Line.1.SIP.AuthUserName</Name>
+                    <Value xsi:type="xsd:string">34000000000@ims.server.domain</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.Line.1.SIP.AuthPassword</Name>
+                    <Value xsi:type="xsd:string">PASSWORD_VALUE</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.Services.VoiceService.1.VoiceProfile.1.Line.1.Enable</Name>
+                    <Value xsi:type="xsd:string">Enabled</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.WANDevice.1.WANConnectionDevice.1.WANPPPConnection.2.Enable</Name>
+                    <Value xsi:type="xsd:boolean">0</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.DeviceInfo.ProvisioningCode</Name>
+                    <Value xsi:type="xsd:string">TR43.4110.0010</Value>
+                </ParameterValueStruct>
+                <ParameterValueStruct>
+                    <Name>InternetGatewayDevice.ManagementServer.PeriodicInformInterval</Name>
+                    <Value xsi:type="xsd:unsignedInt">86832</Value>
+                </ParameterValueStruct>
+            </ParameterList>
+            <ParameterKey>12289377765</ParameterKey>
+        </cwmp:SetParameterValues>
+    </soapenv:Body>
+</soapenv:Envelope>
