@@ -26,13 +26,23 @@ def print_response(response):
 def main():
     parser = argparse.ArgumentParser(
         description="Send test requests to the mitmproxy test server.",
-        epilog="If no payload ID is specified, all predefined payload IDs will be tested."
+        epilog="If no payload ID is specified, all predefined payload IDs will be tested.",
     )
-    parser.add_argument("url", nargs="?", help="URL to send requests to (e.g., http://localhost:8080)")
-    parser.add_argument("payload_id", nargs="?", default=None,
-                        help="specific payload ID to test. If not provided, all predefined payload IDs will be tested.")
-    parser.add_argument("-l", "--list", action="store_true",
-                        help="list all predefined payload IDs and exit.")
+    parser.add_argument(
+        "url", nargs="?", help="URL to send requests to (e.g., http://localhost:8080)"
+    )
+    parser.add_argument(
+        "payload_id",
+        nargs="?",
+        default=None,
+        help="specific payload ID to test. If not provided, all predefined payload IDs will be tested.",
+    )
+    parser.add_argument(
+        "-l",
+        "--list",
+        action="store_true",
+        help="list all predefined payload IDs and exit.",
+    )
     args = parser.parse_args()
 
     predefined_payload_ids = ["empty", "set_new_acs", "parameters", "sample"]

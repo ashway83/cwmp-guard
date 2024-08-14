@@ -5,12 +5,12 @@ import socket
 
 from mitmproxy import http, ctx
 
-config_file = os.environ.get('RESPONSES_CONFIG_FILE', "responses.json")
+config_file = os.environ.get("RESPONSES_CONFIG_FILE", "responses.json")
 
 
 def load_responses():
     try:
-        with open(config_file, 'r') as f:
+        with open(config_file, "r") as f:
             return json.load(f)
     except FileNotFoundError:
         print(f"Error: Responses configuration file '{config_file}' not found.")
@@ -57,29 +57,26 @@ def request(flow: http.HTTPFlow) -> None:
 
     if header_value in responses:
         response_config = responses[header_value]
-        content_file_path = response_config.get('content', None)
-        status_code = response_config['status_code']
-        content_type = response_config.get('content_type', 'application/json')
-        headers = response_config.get('headers', {})
+        content_file_path = response_config.get("content", None)
+        status_code = response_config["status_code"]
+        content_type = response_config.get("content_type", "application/json")
+        headers = response_config.get("headers", {})
 
         if content_file_path and os.path.exists(content_file_path):
-            with open(content_file_path, 'r', encoding='utf-8') as content_file:
+            with open(content_file_path, "r", encoding="utf-8") as content_file:
                 content = content_file.read()
         else:
             content = ""
 
         if status_code == 204:
-            flow.response = http.Response.make(
-                status_code=status_code,
-                headers=headers
-            )
+            flow.response = http.Response.make(status_code=status_code, headers=headers)
         else:
             # If status code is not 204, include content and Content-Type header
             headers["Content-Type"] = content_type
             flow.response = http.Response.make(
                 status_code=status_code,
-                content=content.encode('utf-8'),
-                headers=headers
+                content=content.encode("utf-8"),
+                headers=headers,
             )
         return
 
@@ -87,5 +84,5 @@ def request(flow: http.HTTPFlow) -> None:
     flow.response = http.Response.make(
         status_code=404,
         content=b"No preconfigured response found",
-        headers={"Content-Type": "text/plain"}
+        headers={"Content-Type": "text/plain"},
     )

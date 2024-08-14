@@ -9,7 +9,9 @@ def send_tr069_connection_request(url, username, password):
     try:
         response = requests.get(url, auth=HTTPBasicAuth(username, password))
         response.raise_for_status()
-        print(f"Connection request sent successfully. Status code: {response.status_code}")
+        print(
+            f"Connection request sent successfully. Status code: {response.status_code}"
+        )
     except requests.exceptions.RequestException as e:
         print(f"Error sending connection request: {e}")
 
